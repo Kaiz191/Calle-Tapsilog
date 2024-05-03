@@ -1,0 +1,237 @@
+
+body {
+  background: linear-gradient(to bottom, #FFFFFF, #993737);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 128px;
+}
+
+@media (max-width: 844px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  /* The animation properties */
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s, background-color 0.3s;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  position: center;
+}
+
+.image-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+.navbar-nav .nav-link:hover {
+  border-bottom-color: maroon;
+}
+
+.navbar-nav .nav-link:active {
+  background-color: white;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 5;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-dialog {
+    margin: 50px auto;
+    max-width: 800px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .modal-header .modal-title {
+    margin: 0;
+  }
+
+  .modal-header .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-body {
+    text-align: center;
+  }
+
+  .modal-body img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Handles click on the anchor tag */
+  .card-img-top:hover {
+    cursor: pointer;
+  }
+
+  /* will Style the target element when the anchor tag is clicked */
+  .modal:target {
+    display: block;
+  }
+}
+
+.desc {
+  font-size: x-large;
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.footer {
+  color: white;
+  background-color: #993737;
+}
+
+.info-newsletter h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer i {
+  color: white;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-link {
+  position: relative;
+}
+
+.home-info {
+  font-size: larger;
+  background-color: #3C98E8E;
+  font-weight: 600;
+  border: 2px solid #FFDDDA;
+  border-radius: 3px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1); 
+}
+
+.gallery-body {
+  background-color: #3F27D65;
+}
+
+.carousel-inner {
+  border: 10px solid black;
+}
+
+.divider {
+  border-top: 128px solid Black;
+}
+
+.diff-background {
+  background: linear-gradient(to bottom, #FFFFFF, #993737);
+}
+
+/* Table styling */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table thead {
+  background-color: #E31100; 
+  color: white; 
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:hover {
+  background-color: #f5f5f5; 
+}
+
+.table th, .table td {
+  border: none; 
+}
+
+.table th {
+  font-weight: bold;
+}
+
+
